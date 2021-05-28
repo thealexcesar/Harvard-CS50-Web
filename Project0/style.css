@@ -1,0 +1,46 @@
+.lteugb {
+    text-align: center;
+    max-height:100%;
+    max-width:100%;
+    object-fit:contain;
+    object-position:center bottom;
+    width:auto
+}
+
+.Ne6nSd {
+    display: flex;
+    align-items: center;
+    padding: 36px;
+}
+
+.nav {
+    font-family: arial,sans-serif;
+    line-height: normal;
+    padding-right: 15px;
+    text-align: right;
+}
+
+.img-adv {
+    white-space: nowrap;
+    font-family: arial,sans-serif;
+    line-height: normal;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+#images, #adv {
+    font: 13px/27px, Arial, sans-serif;
+    white-space: nowrap;
+    font-family: arial, sans-serif;
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+#images:hover, #adv:hover {
+    color: #444;
+    text-decoration: underline;
+
+}

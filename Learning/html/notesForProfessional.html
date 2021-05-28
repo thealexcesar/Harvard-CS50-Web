@@ -5,28 +5,32 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>thealexcesar</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script>
+    <script> // <script src="path/to.js" defer(to synchronous) or assync>
+        
         // window.alert("Wellcome")
         var edit = document.getElementById("edit");
         edit.style.color = "red";
-    </script>
-</head> 
+    </script> 
+<!-- Can use <link rel="styledheet" href="path/to.css" type="text/css" -->
+
+</head>
+<style>
+    body {
+        background-color: cornsilk;
+        color: blue;
+        text-align: center;
+        background-image: url(cs.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
 <body>
-    <style>
-        body {
-            color: blue;
-            text-align: center;
-            background-image: url(cs.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-    </style>
     <!-- Example anchor-->
     <h2 id="topic1">First topic</h2>
     <!-- Using the anchor in my table contents -->
     <a href="#topic2" style="color: red;">Jump to topic 2</a>
-    <br><br>
+    <br>
+    <br>
     <a href="#topic2" style="background-color: rgb(233, 224, 218);" target="_blank" rel="noopener noreferrer">Jump topic 2 in new Page</a>
     <br><pre>Defines <mark>pre-formatted</mark> text</pre>
     <b>Bold text here</b>
@@ -45,18 +49,24 @@
     <p>text</p>
     <p>text</p>
     <p>text</p>
-    <p>text</p>
-    <p>text</p>
     <!-- Anchor -->
     <h2 id="topic2">Second topic</h2>
     <p>Content about the second topic</p>
     <p>text</p>
     <p>text</p>
+    <figure>
+        
+    </figure>
     <p>text</p>
     <p>text</p>
     <p>text</p>
     <p>text</p>
-    <p>text</p>
+    <details>
+        <p>Basic Programming</p>
+    </details>
+    <article>
+        Example
+    </article>
     <!-- Jumping -->
     <a href="#topic1" style="color: red;">Jump to topic 1</a>
     <br><br>
@@ -66,5 +76,20 @@
     <br><br><br><a href="47996586662">Call me</a><br>
     <!-- Link that runs email client -->
     <br><a href="mailto:thealexcesar@gmail.com">Send mail</a>
+    <br><a style="font-size: large; float: left; color: orangered; padding-left: 50px;" link rel="prev" href="search.html">prev</a>
+    <a style="font-size: large; float: right; color: orangered; padding-right: 50px;" link rel="next" href="search.html"next>next</a>
+
+    <!-- Can Use Favicon: <link rel="icon" type="image/png" href="/favicon.png">
+or: <link rel="shortcut icon" type="i,age/x-icon" href="/favicon.ico"> -->
+
+<!-- another links recourses is:
+<link rel="preconect" or rel="dns-prefetch" or rel="prefetch" or rel="prerender" and href="URL"> -->
+
+<!-- Link 'media':
+For print pages <link rel="stylesheet" href="test.css" media="print"> -->
+
+<!-- Web Feed:
+<link rel="alternate" type="application/atom+xml" href="http://example.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="http://example.com/feed.xml"> -->
 </body>
 </html>
