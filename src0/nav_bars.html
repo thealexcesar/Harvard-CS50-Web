@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Navigation Bars</title>
+</head>
+<style>
+    body {background-color: rgb(243, 230, 208);}
+    a {text-decoration: none; color: rgb(2, 36, 18);}
+    a:hover {text-decoration: underline; color: rgb(55, 106, 4);}
+    li {color: transparent;}
+</style>
+<body>
+    <h1>Navigation bar</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <label>
+        <p>My completed courses:</p> 
+        <input type="checkbox" name="Disciplines">
+        Carreira Unica: frontend and oop  
+        <br><input type="checkbox" name="Disciplines">
+        Furb: Computer Science <br>
+        <input type="checkbox" name="Disciplines">
+        Uninter: Computer Engeneering
+        <br><input type="checkbox" name="Disciplines">
+        IBM: Web cloud and github
+        <br><input type="checkbox" name="Disciplines">
+        IBM: Artificial Intelligence
+        <br><input type="checkbox" name="Disciplines">
+        Cisco: Cyber Security
+        <br><input type="checkbox" name="Disciplines">
+        Harvard: CS50x Introduction computer Science
+        <br><input type="checkbox" name="Disciplines">
+        Ibm Watson 
+        <br><input type="checkbox" name="Disciplines">
+        Harvard: CS50's Web Python, Javascript, CI/CD, fullstack
+        <br><input type="checkbox" name="Disciplines">
+        Harvard's Artificial Intelligence
+        <br><input type="checkbox" name="Disciplines">
+        MIT
+        <br><input type="checkbox" name="Disciplines">
+        Harvard: Android
+        <br><input type="checkbox" name="Disciplines">
+        100 days of Swift
+    </label>
+    <form action="/login" method="POST">
+
+        <label for="username">Username:</label>
+        <input id="username" type="text" name="username" />
+        <label for="pass">Password:</label>
+        <input id="pass" type="password" name="pass" />
+        <input type="submit" name="submit" />
+       </form>
+       <form id="my-form" action="/login" method="POST">
+        <input id="username" type="text" name="username" />
+        <label for="pass">Password:</label>
+        <input id="pass" type="password" name="pass" />
+        <input type="submit" name="submit" />
+       </form>
+       <!-- Void elements
+         -------------------------------------------------------------------------
+         HTML 4.01/XHTML 1.0 Strict includes the following void elements:
+         -------------------------------------------------------------------------
+         area - clickable, defined area in an image
+         base - specifies a base URL from which all links base
+         br   - line break
+         col  - column in a table [deprecated]
+         hr   - horizontal rule (line)
+         img  - image
+         input- field where users enter data
+         link - links an external resource to the document
+         meta - provides information about the document
+         param - defines parameters for plugins
+         ---------------------------------------------------------------------------
+         HTML 5 standards include all non-deprecated tags from the previous list and
+         ---------------------------------------------------------------------------
+         command- represents a command users can invoke [obsolete]
+         keygen - facilitates public key generation for web certificates [deprecated]
+         source - specifies media sources for picture, audio, and video elements 
+        ---------------------------------------------------------------------------->
+       <br><br>
+       <button onclick="alert('Hello!!!');">Say Hello</button>
+</body>
+</html>

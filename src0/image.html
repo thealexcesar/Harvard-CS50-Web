@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Image</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <h1>Images</h1>
+            <source media="(min-width:600px)" srcset="../Images/pc.jpg 5x"> <!-- Large -->
+    <img src="../medias/cup.jpg" title="Developer Hobbie from: unsplash.com" width="300"
+     alt="A cup written:'Developer Preview Ship.">
+        <h2>Responsive image using a picture element</h2>
+        <picture>
+            <source media="(min-width:900px)" srcset="../medias/pc.jpg 10x"> <!-- Large -->
+            <source media="(min-width:600px)" srcset="../medias/pc.jpg 20x"> <!-- Large -->
+            <source media="(min-width:450px)" srcset="../medias/pc.jpg 40x"> <!-- Small -->
+            <img src="../medias/pc.jpg" stye="widht:auto;" title="pc's Responsive image "> <!-- Default -->
+        </picture>
+        <img src="../medias/beatle.jpg" title="nice beatle" width="60%" usemap="#shapes">      
+    </body>
+</html>
