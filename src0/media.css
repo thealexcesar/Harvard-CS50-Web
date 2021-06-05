@@ -1,0 +1,16 @@
+#videobg {
+    background: url(video.jpg) repeat;
+    background-size: cover;
+}
+
+@media (min-width: 500px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media (max-width: 499px) {
+    body {
+        background-color: blue;
+    }
+}
