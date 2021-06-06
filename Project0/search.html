@@ -17,20 +17,22 @@
                 <div class="img-adv">
                     <a id="adv" data-pid="23" href="advanced.html" target="_top">Advanced</a>
                 </div>
+                <div class="img-adv"><span id="path"></span></div>
             </nav>
         </header>
-        <!-- mainClass -->
         <main>
             <div class="nav">
-                <div class="space">
-                </div> 
-                <!-- logoClass -->
+                <span id="space"></span> 
                 <img class="logo" src="../Project0/images/logo.png " alt="Google" height="92" width="272" data-atf="1">
                 <form action="https://google.com/search">
-                    <div class="bar">
-                        <input type="search" autocomplete="off" placeholder="Search Google or type a URL" name="q">
-                        <input type="submit" value="Google Search">
-                        <ntp-realbox-icon id="icon" in-searchbox="" background-image="" mask-image="search.svg"></ntp-realbox-icon>
+                    <div class="forms">
+                        <div id="inputSearch">
+                            <input type="search" autocomplete="off" placeholder="Search Google or type a URL" name="q">
+                        </div>
+                        <input  class="buttons" type="submit" value="Google Search">
+                        <div class="buttons">
+                            <a href="https://cs50.harvard.edu/web/2020/"><button class="luck-btt" type="button">I'm Feeling Lucky</button></a>
+                        </div>
                     </div>
                 </form>
             </div>
