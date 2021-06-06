@@ -15,7 +15,7 @@ body {
     padding: 36px;
 }
 
-.nav {
+main {
     text-align: center;
     max-height: 100%;
     max-width: 100%;
@@ -116,11 +116,10 @@ img.logo {
 }
 
 /* Image */
-#word {
-    color: rgb(66, 133, 244);
-    text-align: center;
 
-}
+.logo-img {height:92px; width:272px;}
+
+#word {color: #4285f4; margin-left:-60px;}
 
 
 /* Advanced */
