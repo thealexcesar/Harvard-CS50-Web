@@ -132,7 +132,7 @@ input.buttons:focus, .luck-btt:focus {
 
 .main-advanced .container label{
     font-weight: lighter;
-    margin: 1rem 0;
+    margin: .1rem 0;
 }
 
 .appbar {
@@ -160,37 +160,36 @@ hr{
 
 .main-advanced .inline-form{
     margin-bottom: 1rem;
-    display:grid;
+    display: grid;
     grid-template-columns: 3fr 4fr;
     font-size: .8rem;
-}
 
-.main-advanced .inline-form label{
-    display:flex;
-    align-items: center;
 }
 
 .main-advanced .inline-form input[type="text"]{
     height: 2rem;
-    font-size: inherit;
-    padding-left: 5px;
-    border: 1px solid #d0d0d0;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c9c9c9;
+    border-radius: 1px;
+    font-size: 13px;
+    height: 25px;
+    padding: 1px 8px;
 }
 
 .main-advanced .inline-form input[type="text"]:focus{
     outline:none;
-    -webkit-box-shadow: inset 0px 0px 1px 1px #02aac7;
-    -moz-box-shadow: inset 0px 0px 1px 1px #02aac7;
-    box-shadow: inset 0px 0px 1px 1px #02aac7;
+    -webkit-box-shadow: inset 0px 0px 1px 1px #4285f4;
+    -moz-box-shadow: inset 0px 0px 1px 1px #4285f4;
+    box-shadow: inset 0px 0px 1px 1px #4285f4;
 }
 
 .main-advanced .find-div hr{
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .main-advanced .find-div .form-buttons{
     justify-content: center;
-    text-align: right;
+    text-align-last: right;
 }
 
 .main-advanced .find-div .form-buttons input[type="submit"]{
