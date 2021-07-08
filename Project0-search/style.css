@@ -1,11 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    --blue: #4d90fe;
+    --links: #1122cc;
+}
+
 body {
     font-family: arial, sans-serif;
 }
 
 nav {
-    line-height: normal;
-    padding-right: 15px;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
     font-size: small;
 }
 
@@ -86,8 +97,8 @@ input[type="search"]:hover {
     color: #3c4043;
     font-family: arial,sans-serif;
     font-size: 14px;
-    margin: 0 4px;
-    padding: 0 16px;
+    margin: 0 0.25;
+    padding: 0 1rem;
     line-height: 27px;
     height: 36px;
     min-width: 54px;
@@ -108,7 +119,7 @@ input[type="search"]:hover {
 
 .buttons {
     display: inline-block;
-    padding: 15px;
+    padding: 1rem;
 }
 
 input.buttons:focus, .luck-btt:focus {
@@ -117,35 +128,39 @@ input.buttons:focus, .luck-btt:focus {
 }
 
 /* Image */
-#word {color: #4285f4; margin-left:-60px;}
+#word {color: var(--blue); margin-left:-60px;}
 
 /* Advanced */
-.nav-logo{
+nav.nav-logo {
     background-color: #f4f4f4;
-    padding: 10px 0 40px 10px;
-    align-items: center;
-    text-align: left;
-    height: 24px;
-    width: 74px;
-    
+    height: 3rem;
+    width: 0;
+    position: relative;
+}
+
+nav.nav-logo img {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin: 1.3rem 1.3rem;
+    height: 1.5rem;
+    width: 4.6rem;
 }
 
 .main-advanced .container label{
     font-weight: lighter;
-    margin: .1rem 0;
+    margin: 0.1rem 0;
 }
 
 .appbar {
     color: #d93025;
     font-size: 20px;
     padding-left: 0px;
-    margin: 20px 0 30px 0;
+    margin: 2.5rem 0 30px 0;
 }
 
-hr{ 
-    background-color: #d0d0d0;
-    height: 1px;
-    border: 0;
+hr { 
+    border-bottom: 1px solid #ebebeb;
 }
 
 .main-advanced .find-div{
@@ -155,14 +170,14 @@ hr{
 .main-advanced .find-div h2{
     font-weight: lighter;
     margin-bottom: 2rem;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .main-advanced .inline-form{
     margin-bottom: 1rem;
     display: grid;
     grid-template-columns: 3fr 4fr;
-    font-size: .8rem;
+    font-size: 0.8rem;
 
 }
 
@@ -173,14 +188,14 @@ hr{
     border-radius: 1px;
     font-size: 13px;
     height: 25px;
-    padding: 1px 8px;
+    padding: 1px 0.5rem;
 }
 
 .main-advanced .inline-form input[type="text"]:focus{
     outline:none;
-    -webkit-box-shadow: inset 0px 0px 1px 1px #4285f4;
-    -moz-box-shadow: inset 0px 0px 1px 1px #4285f4;
-    box-shadow: inset 0px 0px 1px 1px #4285f4;
+    -webkit-box-shadow: inset 0px 0px 1px 1px var(--blue);
+    -moz-box-shadow: inset 0px 0px 1px 1px var(--blue);
+    box-shadow: inset 0px 0px 1px 1px var(--blue);
 }
 
 .main-advanced .find-div hr{
@@ -193,11 +208,20 @@ hr{
 }
 
 .main-advanced .find-div .form-buttons input[type="submit"]{
-    background-color: #4285F4;
+    background-color: var(--blue);
     color:#fff;
 }
 
 .container{
     width: 80%;
     margin: 0 auto;
+}
+
+.links {
+    text-decoration: none;
+    color: var(--links);
+}
+
+.links:hover {
+    text-decoration: underline;
 }
